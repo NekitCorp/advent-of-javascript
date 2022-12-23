@@ -13,6 +13,5 @@ Within the _STARTER-FILES_ folder, you'll find everything you need to get starte
 
 Users should be able to:
 
-- Start and Stop the Timer
-- Click on the gear icon to change the length (minutes and seconds) for the timer.
-
+-   Start and Stop the Timer
+-   Click on the gear icon to change the length (minutes and seconds) for the timer.
