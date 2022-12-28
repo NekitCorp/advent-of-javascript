@@ -21,12 +21,10 @@ let copiedTimeout;
 /** @type {HTMLButtonElement} */ (
     document.querySelector(".copy")
 ).addEventListener("click", (event) => {
+    const target = /** @type {HTMLButtonElement} */ (event.currentTarget);
+
     navigator.clipboard.writeText(input.value).then(
         () => {
-            const target = /** @type {HTMLButtonElement} */ (
-                event.currentTarget
-            );
-
             clearTimeout(copiedTimeout);
             copiedTimeout = setTimeout(() => {
                 target.classList.remove("copied");
