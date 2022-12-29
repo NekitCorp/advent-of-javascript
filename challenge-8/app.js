@@ -140,7 +140,7 @@ function createItem(data) {
     svg.setAttribute("width", iconNameToSizeMap[condition].width.toString());
     svg.setAttribute("height", iconNameToSizeMap[condition].height.toString());
     svg.setAttribute(
-        "viewDox",
+        "viewBox",
         `0 0 ${iconNameToSizeMap[condition].width} ${iconNameToSizeMap[condition].height}`
     );
     const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
